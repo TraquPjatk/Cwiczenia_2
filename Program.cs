@@ -23,4 +23,23 @@ class Program
 
         return (double)sum / array.Length;
     }
+
+    static int FindMax(int[] array)
+    {
+        if (array == null || array.Length == 0)
+        {
+            throw new ArgumentException("Tablica nie może być pusta.");
+        }
+
+        int max = array[0];
+        foreach (int num in array)
+        {
+            if (num > max)
+            {
+                max = num;
+            }
+        }
+
+        return max;
+    }
 }
