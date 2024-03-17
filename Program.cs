@@ -16,9 +16,9 @@ class Program
         }
 
         int sum = 0;
-        foreach (int value in array)
+        foreach (int num in array)
         {
-            sum += value;
+            sum += num;
         }
 
         return (double)sum / array.Length;
